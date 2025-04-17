@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="intro_title">Find your phone contacts on Messenger</string>
+    <string name="intro_message">Continuously updating your contacts helps us connect you with friends and provide better service.</string>
+    <string name="turn_on">TURN ON</string>
+    <string name="not_now">NOT NOW</string>
+</resources>
