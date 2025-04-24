@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff00">  <!-- 뒷 배경 색 LinearLayout은 자식 View들을 한 방향으로 나란히 배치할 때 사용합니다.
+                                             이때 android:orientation 속성에 vertical 또는 horizontal을 지정합니다.-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"
+        android:backgroundTint="#0000ff"/>
+    <!--android:backgroundTint="#0000ff" 색상 정하기-->
+    <!--속성 이름	의미	동작 방식
+        match_parent	부모 크기와 일치	부모 뷰의 크기만큼 View를 채움
+        wrap_content	내용에 맞춤	View 안의 내용 크기만큼 크기를 설정-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUTTON3" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUTTON4" />
+    </LinearLayout>
+
+</LinearLayout>
