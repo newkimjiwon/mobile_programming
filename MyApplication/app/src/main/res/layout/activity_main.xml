@@ -1,64 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/Text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="선택을 시작하시겠습니까?" />
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/ChkAgree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="시작함" />
-
-    <TextView
-        android:id="@+id/Text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="좋아하는 애완동물은?"
-        android:visibility="invisible" />
-
-    <RadioGroup
-        android:id="@+id/Rgroup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible">
-
-        <RadioButton
-            android:id="@+id/RdoDog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="강아지" />
-
-        <RadioButton
-            android:id="@+id/RdoCat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="고양이" />
-
-        <RadioButton
-            android:id="@+id/RdoRabbit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="토끼" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/BtnOK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="선택 완료"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:id="@+id/ImgPet"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:visibility="invisible" />
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
